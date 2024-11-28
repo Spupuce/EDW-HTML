@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML - Découverte des formulaires</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form>
+        <label for="name">Votre nom</label>
+        <input required type="text" id="name" name="name" placeholder="Indiquez votre nom">
+        
+        <label for="email">Votre email</label>
+        <input required type="email" id="email" name="email" placeholder="Indiquez votre email">
+
+
+        <!-- Color -->
+        <input type="color">
+
+        <!-- Range -->
+        <input type="range">
+
+        <!-- Date -->
+        <input type="date">
+
+        <!-- Password -->
+        <input type="password">
+
+        <!-- checkbox -->
+        <input type="checkbox">
+
+        <!-- radio -->
+         <!-- Un seul choix par formulaire -->
+        <input type="radio" value="cerise" name="fruit">
+        <input type="radio" value="fraise" name="fruit">
+        <input type="radio" value="pomme" name="fruit">
+
+        <!-- file -->
+        <input type="file" name="image" id="image">
+
+        <!-- number -->
+        <input type="number">
+
+        <!-- Select -->
+        <label for="fruit">Choisissez votre fruit préféré</label>
+        <select name="fruit" id="fruit">
+            <option value="">Choisissez votre fruit préféré</option>
+            <option value="cerise">Cerise</option>
+            <option value="fraise">Fraise</option>
+            <option value="pomme">Pomme</option>
+        </select>
+        <br>
+
+        <!-- datalist -->
+         <label for="choix-langues">Choisissez la langue que vous voulez apprendre</label>
+         <input type="langue" id="choix-langues" list="langue">
+         <datalist id="langue">
+            <option value="italien"></option>
+            <option value="japonais"></option>
+            <option value="anglais"></option>
+        </datalist>
+
+         <br>
+        <label for="message">Votre message</label>
+        <textarea id="message" name="message"></textarea>
+
+        <!-- Par défault, les boutons sont de type "submit" -->
+        <button>Envoyer votre message</button>
+        <!-- Si je souhaite mettre un autre bouton dans le formulaire, je dois préciser le type -->
+        <button type="button">Annuler</button>
+        <br>
+    </form>
+</body>
+</html>
