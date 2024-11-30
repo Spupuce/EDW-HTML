@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tableau</title>
+</head>
+<body>
+    <table> <!-- Début du tableau -->
+        <thead> <!-- En-tête du tableau -->
+            <tr> <!-- Ligne d'en-tête -->
+                <th>&nbsp;</th> <!-- Cellule vide pour l'alignement -->
+                <th scope="col">Nom</th> <!-- En-tête de colonne pour le nom -->
+                <th scope="col">Job</th> <!-- En-tête de colonne pour le job -->
+                <th scope="col">Contact</th> <!-- En-tête de colonne pour le contact -->
+            </tr>
+        </thead>
+        <tbody> <!-- Corps du tableau -->
+            <tr> <!-- Première ligne de données -->
+                <th scope="row">User1</th> <!-- En-tête de ligne pour User1 -->
+                <td>John Doe</td> <!-- Cellule de données pour le nom -->
+                <td>Web Designer</td> <!-- Cellule de données pour le job -->
+                <td>00 00 00 00 00</td> <!-- Cellule de données pour le contact -->
+            </tr>
+            <tr> <!-- Deuxième ligne de données -->
+                <th scope="row">User2</th> <!-- En-tête de ligne pour User2 -->
+                <td>Jane Doe</td> <!-- Cellule de données pour le nom -->
+                <td>Web Designer</td> <!-- Cellule de données pour le job -->
+                <td>00 00 00 00 00</td> <!-- Cellule de données pour le contact -->
+            </tr>
+        </tbody>
+        <tfoot> <!-- Pied du tableau -->
+            <tr> <!-- Ligne de pied de tableau -->
+                <th scope="row">Total</th> <!-- En-tête de ligne pour le total -->
+                <td colspan="2">2 employés</td> <!-- Cellule fusionnée sur 2 colonnes -->
+                <td>-</td> <!-- Cellule vide pour le contact -->
+            </tr>
+        </tfoot>
+    </table> <!-- Fin du tableau -->
+</body>
+</html>
